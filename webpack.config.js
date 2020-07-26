@@ -18,6 +18,19 @@ module.exports = {
           'postcss-loader',
           'sass-loader'
         ]
+      },
+      {
+        test: /\.(jpe?g|gif|png|svg|woff2?|ttf|eot)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[contenthash].[ext]',
+              outputPath: 'images',
+              publicPath: 'http://127.0.0.1:15000/images'
+            }
+          }
+        ]
       }
     ]
   }
