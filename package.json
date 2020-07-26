@@ -1,0 +1,11 @@
+{
+  "name": "udemy-webpack-bable-sass-eslint",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "a1824jj <a1824jj@aiit.ac.jp>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.44.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
