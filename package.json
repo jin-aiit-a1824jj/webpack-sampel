@@ -5,7 +5,9 @@
   "author": "a1824jj <a1824jj@aiit.ac.jp>",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^9.8.5",
     "css-loader": "^4.0.0",
+    "postcss-loader": "^3.0.0",
     "sass": "^1.26.10",
     "sass-loader": "^9.0.2",
     "style-loader": "^1.2.1",

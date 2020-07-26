@@ -11,3 +11,5 @@ yarn run webpack --mode development --devtool none
 yarn run webpack
 
 yarn add --dev sass sass-loader css-loader style-loader
+
+yarn add postcss-loader autoprefixer --dev
