@@ -7,3 +7,5 @@ yarn run webpack --mode development
 yarn run webpack --mode development --devtool none
 
 // yarn run webpack --config ./webpack.dev.js  // webpack.config.js => default
+
+yarn run webpack
