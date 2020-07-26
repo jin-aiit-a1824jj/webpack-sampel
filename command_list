@@ -15,3 +15,5 @@ yarn add --dev sass sass-loader css-loader style-loader
 yarn add postcss-loader autoprefixer --dev
 
 yarn add file-loader --dev
+
+yarn add mini-css-extract-plugin --dev
