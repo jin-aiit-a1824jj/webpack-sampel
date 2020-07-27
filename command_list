@@ -30,3 +30,5 @@ yarn add eslint eslint-loader babel-eslint --dev
 // yarn run eslint --init
 
 yarn add html-webpack-plugin --dev
+
+yarn add --dev html-loader
