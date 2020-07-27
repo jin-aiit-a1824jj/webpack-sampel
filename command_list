@@ -40,3 +40,9 @@ yarn add rimraf --dev
 yarn add webpack-merge --dev
 yarn run dev
 yarn run build
+
+yarn add optimize-css-assets-webpack-plugin terser-webpack-plugin --dev
+// https://webpack.js.org/configuration/mode/#mode-development
+// https://github.com/NMFR/optimize-css-assets-webpack-plugin
+// https://github.com/webpack-contrib/terser-webpack-plugin
+// https://github.com/jantimon/html-webpack-plugin#minification
