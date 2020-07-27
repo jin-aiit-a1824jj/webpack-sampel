@@ -32,3 +32,11 @@ yarn add eslint eslint-loader babel-eslint --dev
 yarn add html-webpack-plugin --dev
 
 yarn add --dev html-loader
+
+yarn run webpack --config. ./webpack.dev.js
+npx webpack --config ./webpack.prod.js
+
+yarn add rimraf --dev
+yarn add webpack-merge --dev
+yarn run dev
+yarn run build

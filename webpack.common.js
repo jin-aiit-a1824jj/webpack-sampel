@@ -1,14 +1,13 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = {
-  mode: 'development',
-  devtool: 'none',
+module.exports = ({outputFile, assetFile}) => ({
+  mode: 'development', //分割
+  devtool: 'none', //分割
   entry: { app: './src/app.js', sub: './src/app.js'},
   output: {
     path: path.resolve(__dirname, 'public'),
-    filename: '[name].[chunkhash].js'
+    filename: `${outputFile}.js`
   },
   module: {
     rules: [
@@ -42,7 +41,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '[contenthash].[ext]',
+              name: `${assetFile}.[ext]`,
               outputPath: 'images',
               publicPath: 'http://127.0.0.1:15000/images'
             }
@@ -57,11 +56,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[name].css'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/index.html',
-      inject: 'body'
+      filename: `${outputFile}.css`
     })
   ]
-}
+});
