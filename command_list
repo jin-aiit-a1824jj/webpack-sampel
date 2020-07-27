@@ -22,3 +22,5 @@ yarn add babel-loader @babel/core @babel/preset-env --dev
 
 // https://github.com/browserslist/browserslist
 yarn add core-js@3 regenerator-runtime
+
+yarn add eslint eslint-loader babel-eslint --dev
