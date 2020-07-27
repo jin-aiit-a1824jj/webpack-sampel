@@ -5,7 +5,7 @@ const { ProvidePlugin } = require('webpack');
 module.exports = ({outputFile, assetFile}) => ({
   mode: 'development', //分割
   devtool: 'none', //分割
-  entry: { app: './src/app.js', sub: './src/app.js'},
+  entry: { app: './src/js/app.js', sub: './src/js/app.js'},
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: `${outputFile}.js`,
@@ -63,7 +63,7 @@ module.exports = ({outputFile, assetFile}) => ({
     new ProvidePlugin({
       jQuery: 'jquery',
       $: 'jquery',
-      utils: [path.resolve(__dirname, 'src/utils'), 'default']
+      utils: [path.resolve(__dirname, 'src/js/utils'), 'default']
     })
   ],
   optimization: {
@@ -78,10 +78,18 @@ module.exports = ({outputFile, assetFile}) => ({
         },
         utils: {
           name: "utils",
-          test: /src[\\/]utils[\\/]/,
+          test: /src[\\/]js[\\/]utils[\\/]/,
         },
         default: false
       }
     }
+  },
+  resolve: {
+    alias: {
+      '@scss': path.resolve(__dirname, 'src/scss'),
+      '@imgs': path.resolve(__dirname, 'src/images')
+    },
+    extensions: ['.js', '.scss'],
+    modules:[path.resolve(__dirname, 'src'), 'node_modules']
   }
 });

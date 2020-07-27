@@ -1,5 +1,6 @@
 import './sub';
-import './app.scss';
+import 'js/sub';
+import '@scss/app.scss';
 import utils from './utils';
 // import 'regenerator-runtime';
 // import 'core-js';
