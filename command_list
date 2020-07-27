@@ -24,3 +24,8 @@ yarn add babel-loader @babel/core @babel/preset-env --dev
 yarn add core-js@3 regenerator-runtime
 
 yarn add eslint eslint-loader babel-eslint --dev
+
+// https://eslint.org/docs/user-guide/configuring#specifying-environments
+// https://eslint.org/docs/rules/
+// yarn run eslint --init
+

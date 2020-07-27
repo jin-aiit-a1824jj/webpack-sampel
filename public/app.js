@@ -2395,10 +2395,13 @@ __webpack_require__.r(__webpack_exports__);
 
  // import 'regenerator-runtime';
 // import 'core-js';
+// import jQuery from "jquery";
 
 const init = async () => {
   console.log('this is a main js file.');
   await asyncFn();
+  jQuery();
+  g = 0;
 };
 
 async function asyncFn() {
