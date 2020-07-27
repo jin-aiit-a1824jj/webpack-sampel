@@ -79,6 +79,7 @@ module.exports = ({outputFile, assetFile}) => ({
         utils: {
           name: "utils",
           test: /src[\\/]js[\\/]utils[\\/]/,
+          chunks: 'async'//initial
         },
         default: false
       }
