@@ -19,5 +19,9 @@
     "webpack": "^4.44.0",
     "webpack-cli": "^3.3.12"
   },
-  "repository": "https://github.com/jin-aiit-a1824jj/webpack-sampel.git"
+  "repository": "https://github.com/jin-aiit-a1824jj/webpack-sampel.git",
+  "dependencies": {
+    "core-js": "3",
+    "regenerator-runtime": "^0.13.7"
+  }
 }
