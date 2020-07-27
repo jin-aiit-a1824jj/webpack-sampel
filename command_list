@@ -48,3 +48,5 @@ yarn add optimize-css-assets-webpack-plugin terser-webpack-plugin --dev
 // https://github.com/jantimon/html-webpack-plugin#minification
 
 yarn add webpack-dev-server --dev
+
+yarn add jquery --dev
