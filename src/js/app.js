@@ -1,5 +1,4 @@
 setTimeout(()=>{
-    import('js/app');
     import('@scss/app');
 }, 2000);
 

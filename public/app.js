@@ -284,7 +284,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils */ "./src/js/utils/index.js");
 
 setTimeout(() => {
-  Promise.resolve(/*! import() */).then(__webpack_require__.bind(null, /*! js/app */ "./src/js/app.js"));
   __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.t.bind(null, /*! @scss/app */ "./src/scss/app.scss", 7));
 }, 2000);
  // import 'regenerator-runtime';
