@@ -50,3 +50,5 @@ yarn add optimize-css-assets-webpack-plugin terser-webpack-plugin --dev
 yarn add webpack-dev-server --dev
 
 yarn add jquery --dev
+
+//https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next
