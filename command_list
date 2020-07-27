@@ -29,3 +29,4 @@ yarn add eslint eslint-loader babel-eslint --dev
 // https://eslint.org/docs/rules/
 // yarn run eslint --init
 
+yarn add html-webpack-plugin --dev
