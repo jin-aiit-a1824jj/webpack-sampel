@@ -8,6 +8,15 @@ const assetFile = '[name]';
 module.exports = () => merge(commonConf({outputFile, assetFile}), {
   mode: 'development',
   devtool: 'source-map',
+  devServer: {
+    contentBase: path.join(__dirname, 'public'),
+    port: 5000,
+    host: '0.0.0.0',
+    open: true,
+    watchOptions: {
+      ignored: /node_modules/
+    }
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
