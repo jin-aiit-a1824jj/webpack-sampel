@@ -7,10 +7,15 @@ module.exports = {
   entry: { app: './src/app.js', sub: './src/app.js'},
   output: {
     path: path.resolve(__dirname, 'public'),
-    filename: '[name].[contenthash].js'
+    filename: '[name].js'
   },
   module: {
     rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader'
+      },
       {
         test: /\.scss$/,
         use: [
@@ -38,7 +43,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[name].[contenthash].css'
+      filename: '[name].css'
     }),
   ]
 }

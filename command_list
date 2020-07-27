@@ -17,3 +17,5 @@ yarn add postcss-loader autoprefixer --dev
 yarn add file-loader --dev
 
 yarn add mini-css-extract-plugin --dev
+
+yarn add babel-loader @babel/core @babel/preset-env --dev
