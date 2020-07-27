@@ -1,5 +1,6 @@
 import './sub';
 import './app.scss';
+import utils from './utils';
 // import 'regenerator-runtime';
 // import 'core-js';
 // import jQuery from "jquery";
@@ -8,7 +9,7 @@ const init = async () => {
     console.log('this is a main js file.');
     await asyncFn();
     jQuery();
-    g = 0;
+    utils.log('hello form app.js');
 };
 
 async function asyncFn(){
